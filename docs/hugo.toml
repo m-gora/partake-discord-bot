@@ -10,4 +10,17 @@ title = 'My New Hugo Site'
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
         disable = false
 
-[params]
+[params.docs]
+    darkMode = true
+    themeColor = "emerald"
+
+    repoUrl = "https://github.com/m-gora/partake-discord-bot"
+
+[params.footer]
+    copyright = "&copy; 2023 M. Gora, Partake is a brand of Veld Technologies, Discord is a brand of Discord, Inc."
+
+[params.social]
+    github = "m-gora/partake-discord-bot"
+
+[security.exec]
+    allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$', '^asciidoctor$']

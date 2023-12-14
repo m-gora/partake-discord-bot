@@ -1,0 +1,10 @@
+---
+weight: 900
+title: "9. Architecture Decisions"
+description: ""
+icon: "verified"
+date: "2023-12-14T15:37:05+01:00"
+lastmod: "2023-12-14T15:37:05+01:00"
+draft: false
+toc: true
+---
