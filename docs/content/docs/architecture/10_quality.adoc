@@ -1,0 +1,10 @@
+---
+weight: 1000
+title: "10. Quality Requirements"
+description: "Which quality requirements we want to fulfill"
+icon: "checklist"
+date: "2023-12-14T15:37:05+01:00"
+lastmod: "2023-12-14T15:37:05+01:00"
+draft: false
+toc: true
+---

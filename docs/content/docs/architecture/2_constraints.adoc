@@ -1,0 +1,16 @@
+---
+weight: 200
+title: "2. Constraints"
+description: "What we can't do"
+icon: "gavel"
+date: "2023-12-14T15:37:05+01:00"
+lastmod: "2023-12-14T15:37:05+01:00"
+draft: false
+toc: true
+---
+
+Currently known constraints:
+
+. Client Credentials flow is currently not supported at Partake
+.. A non-standard authorization flow makes the integration with Partake harder
+.. Although this affects only writing access, as reads are public

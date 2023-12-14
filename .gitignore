@@ -131,4 +131,10 @@ dist
 
 
 # generated hugo assets
-resources/_gen/
+docs/resources/_gen/
+
+# ide
+.vscode
+
+# hugo
+.hugo_build.lock

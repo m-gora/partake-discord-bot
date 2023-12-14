@@ -1,0 +1,60 @@
+---
+weight: 100
+title: "1. Introduction and Goals"
+description: "Which problem we solve"
+icon: "flag"
+date: "2023-12-14T15:37:05+01:00"
+lastmod: "2023-12-14T15:37:05+01:00"
+draft: false
+toc: true
+---
+This document shall guide architects and software engineers through the requirements and design decisions taken for the partake discord bot. The bot's purpose is to reduce frictions between discord and partake when managing events.
+
+## 1.1. Requirements Overview
+The main features include:
+
+- Simultaneous creation of Partake events and posts on discord
+- Guided event creation with customizable templates
+- Search for events within discord
+- Embedding events in discord posts and one-click attending of events
+
+Event organizers will be able to create post templates for their event posts. As soon as Partake supports the new editor with markdown support, these templates will be used for both discord posts and partake event creation, to be consistent with the styling.
+Event creation will be guided with fillable forms which are dynamically generated from templates, which can be customized by the organizers. Events created this way will have a button below the post, which lets people attend the event without going to Partake,
+provided they have a registered account.
+
+.Use Cases
+|===
+|Name |Description
+|Account Linking | Users can link their Discord account to their Partake account
+|Multi-Tenancy   | Each discord server corresponds to a certain team on Partake and can be configed via command
+|Event Creation  | Events can be created with a simple slash command
+|Event Guidance  | Event creation follows guided principles to ensure consistency among all event without keeping template docs
+|Event Embeds    | Events are posted on a local configurable channel as an embedding
+|Event Attending | Event embeds allow users with linked accounts to directly attend the event
+|===
+
+
+## 1.2. Quality Goals
+The most important quality goals are:
+
+.Quality Goals
+|===
+|Goal |Description
+
+|Security    | All the data transfer is done in a secure way. Personal information is encrypted if stored at all
+|Usability   | The system is attractive to use for both organizers and attendees and simplifies their workflows
+|Reliability | The system is tolerant to failures and processes end in a defined state
+|===
+
+
+## 1.3. Stakeholder
+People who have stakes in this document are:
+
+.Stakeholder
+|===
+|Role | Contact | Expectations
+
+|Partake Developers | link:https://discord.gg/zDUJEGzhPW[Discord] | Integration efforts, security concerns
+|Repo Maintainer    | link:https://github.com/m-gora/partake-discord-bot/issues[Github] | Code quality, clean architecture
+|Open Source Devs   | varies | Stable development, easy development workflows
+|===

@@ -1,0 +1,10 @@
+---
+weight: 300
+title: "3. Context & Scope"
+description: "What systems we are connecting"
+icon: "search"
+date: "2023-12-14T15:37:05+01:00"
+lastmod: "2023-12-14T15:37:05+01:00"
+draft: false
+toc: true
+---
